@@ -22,12 +22,21 @@ h1 {
 h2 {
   color: #ffffff;
   font-size: 2rem;
+  font-weight: 400;
   padding-bottom: 1%;
 	text-align: center;
 }
 
+h3 {
+  color: #0081c6;
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding-bottom: 3%;
+  text-align: center;
+}
+
 p {
-	font-size: 1.1rem;
+	font-size: 1rem;
 	line-height: 2rem;
 }
 
@@ -42,7 +51,6 @@ header {
   color: #ffffff;
 	position: fixed;
 	width: 100%;
-	/* padding: 3% 0; */
 }
 
 /*===================
@@ -55,7 +63,7 @@ header {
   background-image: url('img/index-hero.jpg');
   background-size: cover;
   background-position: top;
-  padding: 20% 0;
+  padding: 30% 0;
 }
 
 /*===================
@@ -72,8 +80,74 @@ header {
 }
 
 .page-description p {
-  max-width: 60%;
+  max-width: 85%;
   margin: 0 auto;
+}
+
+/*===================
+*
+* Quick Links
+*
+=====================*/
+
+.index-container {
+  padding-top: 10%;
+}
+
+.quick-links {
+  text-align: center;
+}
+
+.link-block {
+  padding-bottom: 20%;
+}
+
+.link-block img {
+  width: 80%;
+}
+
+.link-block p {
+  width: 75%;
+  margin: 0 auto;
+  padding: 4% 0 5% 0;
+}
+
+.link-button {
+  text-decoration: none;
+  padding: 1.8% 2.5%;
+	color: #ffffff;
+	font-weight: 500;
+	background: #0081c6;
+	border: #0081c6 solid 0.095rem;
+	border-radius: 0.3rem;
+}
+
+.link-block a:hover {
+	color: #0081c6;
+	background: #ffffff;
+	padding: 1.8% 2.5%;
+  transition: .4s;
+}
+
+/*===================
+*
+* Footer
+*
+=====================*/
+
+footer {
+  background: #0082c6;
+  text-align: center;
+  padding: 3% 0;
+}
+
+footer p {
+	color: #ffffff;
+}
+
+footer img {
+	max-width: 45px;
+	padding: 1%;
 }
 
 /* ----------------- START 1060PX MEDIA QUERY ----------------- */
@@ -121,3 +195,20 @@ header {
 }
 
 /* ----------------- END 1060PX MEDIA QUERY ----------------- */
+
+/* ----------------- START 1100PX MEDIA QUERY ----------------- */
+
+@media (min-width: 1100px) {
+
+	.quick-links {
+		display: flex;
+		justify-content: center;
+	}
+
+	.button-go {
+		 padding: 2% 4.5%;
+	}
+
+}
+
+/* ----------------- END 1100PX MEDIA QUERY ----------------- */
