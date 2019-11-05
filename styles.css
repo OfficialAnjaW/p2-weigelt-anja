@@ -1,0 +1,32 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+	color: #585959;
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 1.8rem;
+	padding-bottom: 3%;
+	text-align: center;
+}
+
+p {
+	font-size: 1.1rem;
+	line-height: 2.2rem;
+}
+
+/*===================
+*
+* Header/Navigation
+*
+=====================*/
