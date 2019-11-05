@@ -30,3 +30,57 @@ p {
 * Header/Navigation
 *
 =====================*/
+
+header {
+	background-color: #0081c6;
+  color: #ffffff;
+	position: fixed;
+	width: 100%;
+	/* padding: 3% 0; */
+}
+
+/* ----------------- START 1060PX MEDIA QUERY ----------------- */
+
+@media (min-width: 1060px) {
+
+  li img {
+    width: 80%;
+  }
+
+  .desktop-nav {
+    display: flex;
+    align-items: center;
+    margin: 0 1.5%;
+  }
+
+  .desktop-nav li:first-child {
+    margin-right: auto;
+  }
+
+  .desktop-nav a {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1.3rem;
+    text-decoration: none;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    padding: 1%;
+  }
+
+	nav a:hover {
+		color: #ed1c24;
+		transition: .5s;
+	}
+
+	header nav .active {
+		color: #ed1c24;
+	}
+
+}
+
+/* ----------------- END 1060PX MEDIA QUERY ----------------- */
