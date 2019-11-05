@@ -13,16 +13,22 @@ body {
 	color: #585959;
 }
 
+h1 {
+  color: #ffffff;
+  font-size: 3rem;
+  text-align: center;
+}
+
 h2 {
   color: #ffffff;
-  font-size: 1.8rem;
-	padding-bottom: 3%;
+  font-size: 2rem;
+  padding-bottom: 1%;
 	text-align: center;
 }
 
 p {
 	font-size: 1.1rem;
-	line-height: 2.2rem;
+	line-height: 2rem;
 }
 
 /*===================
@@ -37,6 +43,37 @@ header {
 	position: fixed;
 	width: 100%;
 	/* padding: 3% 0; */
+}
+
+/*===================
+*
+* Hero Image Section
+*
+=====================*/
+
+.hero-image-index {
+  background-image: url('img/index-hero.jpg');
+  background-size: cover;
+  background-position: top;
+  padding: 20% 0;
+}
+
+/*===================
+*
+* Page Description
+*
+=====================*/
+
+.page-description {
+  background-color: #0081c6;
+  color: #ffffff;
+  text-align: center;
+  padding: 2% 0;
+}
+
+.page-description p {
+  max-width: 60%;
+  margin: 0 auto;
 }
 
 /* ----------------- START 1060PX MEDIA QUERY ----------------- */
@@ -60,7 +97,7 @@ header {
   .desktop-nav a {
     color: #ffffff;
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-decoration: none;
   }
 
