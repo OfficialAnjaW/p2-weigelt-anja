@@ -35,6 +35,11 @@ h3 {
   text-align: center;
 }
 
+h4 {
+	font-size: 1.2rem;
+	font-weight: 400;
+}
+
 p {
 	font-size: 1rem;
 	line-height: 2rem;
@@ -90,7 +95,7 @@ header {
 *
 =====================*/
 
-.container {
+.index-container {
   padding-top: 10%;
 }
 
@@ -127,6 +132,57 @@ header {
 	background: #ffffff;
 	padding: 1.8% 2.5%;
   transition: .4s;
+}
+
+/*===================
+*
+* Accordion
+*
+=====================*/
+
+#accordion {
+  width: 90%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+@media (min-width: 768px) {
+  #accordion {
+    width: 50%;
+  }
+}
+
+.accordion-headers {
+  height: 60px;
+  display: flex;
+  align-items: center;
+	color: #0081c6;
+  background-color: #ffffff;
+	border: #0081c6 solid 0.095rem;
+	border-radius: 0.3rem;
+  margin: 10px auto;
+  padding: 0 20px;
+  justify-content: space-between;
+}
+
+.toggle-indicator {
+  font-size: 40px;
+	color: #008ac6;
+}
+
+.accordion-description {
+  height: 0;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  transition: height 0.5s;
+}
+
+/* JS Classes */
+
+.accordion-open {
+  height: 100px;
+  padding: 5px 20px;
+  transition: height 0.5s;
 }
 
 /*===================
