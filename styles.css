@@ -47,7 +47,7 @@ p {
 
 /*===================
 *
-* Header/Navigation
+* Header/ Mobile Navigation
 *
 =====================*/
 
@@ -56,6 +56,52 @@ header {
   color: #ffffff;
 	position: fixed;
 	width: 100%;
+}
+
+.desktop-menu {
+	display: none;
+}
+
+#hamburger {
+	display: block;
+	width: 100px;
+	height: 100px;
+	margin: auto;
+	margin-top: 60px;
+	background-color: #0081c6;
+	font-size: 50px;
+	color: #ffffff;
+}
+
+.mobile-menu {
+	height: 0px;
+	overflow: hidden;
+	transition: height 0.5s;
+}
+
+.show-mobile-menu {
+	height: 213px;
+	transition: height 0.5s;
+}
+
+.mobile-menu ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.mobile-menu ul li {
+	height: 70px;
+	border-bottom: 1px solid #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.mobile-nav a {
+	color: #ffffff;
+	font-weight: 500;
+	font-size: 1.2rem;
+	text-decoration: none;
 }
 
 /*===================
@@ -219,7 +265,7 @@ h5 {
 	margin: 0 auto;
 }
 
-button {
+.ad-button {
 	background-color: #0081c6;
 	color: #ffffff;
 	font-size: 0.9rem;
@@ -238,7 +284,7 @@ button {
 
 /* Slide-Out Ad Animation */
 
-.show {
+.show-ad {
 	width: 320px;
 	height: 350px;
 	transition: width 2s;
@@ -246,6 +292,7 @@ button {
 
 .hide {
 	width: 0;
+	overflow: hidden;
 	height: 350px;
 }
 
@@ -273,6 +320,17 @@ footer img {
 /* ----------------- START 1060PX MEDIA QUERY ----------------- */
 
 @media (min-width: 1060px) {
+
+/* Desktop Navigation */
+
+  #hamburger,
+  .mobile-menu {
+		display: none;
+	}
+
+	.desktop-menu {
+		display: block;
+	}
 
   li img {
     width: 80%;

@@ -1,22 +1,30 @@
 // 1. HAMBURGER MENU
 
+// Global Varibale
+const hamburgerButton = document.getElementById('hamburger');
+const navMenu = document.querySelector('.mobile-menu');
+
+function toggleMenu() {
+  navMenu.classList.toggle('show-mobile-menu');
+}
+
+hamburgerButton.addEventListener('click', toggleMenu);
+
 // 2. POP-UP AD
 
 // Global Varibale
-
 const slideOutAd = document.getElementById('slideout-ad');
 
-// // Show Ad After 3 Seconds on Page
-
+// Show Ad After 3 Seconds on Page
 setTimeout(() => {
   slideOutAd.classList.remove('hide');
-  slideOutAd.classList.add('show');
+  slideOutAd.classList.add('show-ad');
 }, 2000);
 
 
 // 3. ACCORDION
 
-// Variables
+// Global Variables
 const accordionHeaders = document.querySelectorAll('#accordion .accordion-headers');
 const accordionDescriptions = document.querySelectorAll('#accordion .accordion-description');
 

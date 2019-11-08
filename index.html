@@ -15,10 +15,21 @@
   </head>
   <body>
 
-    <!-- Header/Navigation -->
+    <!-- Header -->
     <header>
-      <!-- <button id="hamburger">&#9776;</button> -->
-      <nav class="menu">
+      <!-- Mobile Navigation -->
+      <button id="hamburger">&#9776;</button>
+      <nav class="mobile-menu">
+        <ul class="mobile-nav">
+          <li><a href="about.html">About</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="donate.html">Donate</a></li>
+        </ul>
+      </nav>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-menu">
         <ul class="desktop-nav">
           <li><a href="index.html"><img src="img/bgccf-logo.png" alt="BGCCF Logo" title="Bgccf Logo" /></a></li>
           <li><a href="about.html">About</a></li>
@@ -41,7 +52,7 @@
             <div class="ad-text">
               <h5>Great Futures Start With You!</h5>
               <p>Open the door to a Great Future for more than 15,000 children from disadvantaged circumstances.</p>
-              <button type="button" name="button">Donate</button>
+              <button class="ad-button">Donate</button>
             </div>
           </div>
         </div>
