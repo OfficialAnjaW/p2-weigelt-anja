@@ -104,7 +104,7 @@ header {
 }
 
 .link-block {
-  padding-bottom: 20%;
+  padding-bottom: 10%;
 }
 
 .link-block img {
@@ -183,6 +183,70 @@ header {
   height: 100px;
   padding: 5px 20px;
   transition: height 0.5s;
+}
+
+/*===================
+*
+* Slide-Out Ad
+*
+=====================*/
+
+/* Ad Styling */
+
+#slideout-ad {
+	max-width: 320px;
+	background-color: #ffffff;
+	text-align: center;
+	position: absolute;
+	right: 0;
+	bottom: 36px;
+	padding-bottom: 2%;
+}
+
+h5 {
+	font-size: 1.2rem;
+	padding: 3% 0;
+	color: #0081c6;
+}
+
+#slideout-ad p {
+	padding: 0 6%;
+	font-size: 0.9rem;
+}
+
+.ad-text {
+	width: 300px;
+	margin: 0 auto;
+}
+
+button {
+	background-color: #0081c6;
+	color: #ffffff;
+	font-size: 0.9rem;
+	width: 100px;
+	height: 30px;
+	border-radius: 0.3rem;
+	margin: 5% 0;
+}
+
+/* Container */
+
+.slideout-container {
+	position: relative;
+	height: 1vh;
+}
+
+/* Slide-Out Ad Animation */
+
+.show {
+	width: 320px;
+	height: 350px;
+	transition: width 2s;
+}
+
+.hide {
+	width: 0;
+	height: 350px;
 }
 
 /*===================
