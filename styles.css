@@ -21,13 +21,13 @@ body {
 
 h1 {
   color: #ffffff;
-  font-size: 2.3rem;
+  font-size: 1.6rem;
   text-align: center;
 }
 
 h2 {
   color: #ffffff;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 400;
   padding-bottom: 1%;
 	text-align: center;
@@ -35,9 +35,9 @@ h2 {
 
 h3 {
   color: #0081c6;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 400;
-  padding-bottom: 3%;
+  padding-bottom: 5%;
   text-align: center;
 }
 
@@ -47,8 +47,8 @@ h4 {
 }
 
 p {
-	font-size: 1rem;
-	line-height: 2rem;
+	font-size: 0.8rem;
+	line-height: 1.6rem;
 }
 
 /*===================
@@ -62,7 +62,7 @@ header {
   color: #ffffff;
 	position: fixed;
 	width: 100%;
-	padding: 2% 0 1% 2%;
+	padding: 2% 0 3% 2%;
 }
 
 .desktop-menu {
@@ -70,7 +70,8 @@ header {
 }
 
 .mobile-logo {
-	max-width: 250px;
+	padding-top: 2%;
+	width: 200px;
 }
 
 #hamburger {
@@ -84,7 +85,7 @@ header {
 	height: 100px;
 	font-size: 50px;
 	color: #ffffff;
-	padding-bottom: 7%;
+	padding-bottom: 10%;
 }
 
 .mobile-menu {
@@ -94,7 +95,7 @@ header {
 }
 
 .show-mobile-menu {
-	height: 213px;
+	height: 285px;
 	transition: height 0.5s;
 }
 
@@ -118,6 +119,11 @@ header {
 	text-decoration: none;
 }
 
+nav a:hover {
+	color: #ed1c24;
+	transition: .5s;
+}
+
 /*===================
 *
 * Hero Image Section
@@ -128,7 +134,7 @@ header {
   background-image: url('img/index-hero.jpg');
   background-size: cover;
   background-position: top;
-  padding: 30% 0;
+  padding: 45% 0 40% 0;
 }
 
 /*===================
@@ -141,7 +147,7 @@ header {
   background-color: #0081c6;
   color: #ffffff;
   text-align: center;
-  padding: 2% 0;
+  padding: 3% 0;
 }
 
 .page-description p {
@@ -164,7 +170,7 @@ header {
 }
 
 .link-block {
-  padding-bottom: 10%;
+  padding-bottom: 20%;
 }
 
 .link-block img {
@@ -327,7 +333,7 @@ footer p {
 }
 
 footer img {
-	max-width: 45px;
+	width: 30px;
 	padding: 1%;
 }
 
@@ -337,12 +343,108 @@ footer img {
 *
 =====================*/
 
+/* ----------------- START 450PX MEDIA QUERY ----------------- */
+
+@media (min-width: 450px) {
+
+	p {
+		font-size: 1rem;
+		line-height: 2rem;
+	}
+
+	h1 {
+		font-size: 2rem;
+	}
+
+	#hamburger {
+		padding-bottom: 5%;
+	}
+
+	.link-button {
+	  padding: 1.5% 2.2%;
+	}
+
+}
+
+/* ----------------- END 450PX MEDIA QUERY ----------------- */
+
+/* ----------------- START 550PX MEDIA QUERY ----------------- */
+
+@media (min-width: 550px) {
+
+	#hamburger {
+		padding-bottom: 1%;
+	}
+
+}
+
+/* ----------------- END 550PX MEDIA QUERY ----------------- */
+
+/* ----------------- START 650PX MEDIA QUERY ----------------- */
+
+@media (min-width: 650px) {
+
+	#hamburger {
+		padding-bottom: 0;
+	}
+
+	header {
+		padding: 1% 3% 2%;
+	}
+
+	.mobile-logo {
+		padding-top: 2%;
+		width: 250px;
+	}
+
+	.link-block p {
+	  max-width: 488px;
+		 padding: 2% 0 3% 0;
+	}
+
+	.link-block img {
+	  max-width: 472px;
+	}
+
+}
+
+/* ----------------- END 650PX MEDIA QUERY ----------------- */
+
 /* ----------------- START 768PX MEDIA QUERY ----------------- */
 
 @media (min-width: 768px) {
 
 	h1 {
 		font-size: 3rem;
+	}
+
+	h2 {
+	  font-size: 2rem;
+	}
+
+	h3 {
+	  font-size: 1.6rem;
+	  padding-bottom: 3%;
+	}
+
+	.hero-image-index {
+	  padding: 35% 0 30% 0;
+	}
+
+	.link-block {
+	  padding-bottom: 10%;
+	}
+
+	.link-button {
+		padding: 1.2% 2%;
+	}
+
+	footer img {
+		width: 45px;
+	}
+
+	footer {
+	  padding: 1.5% 0;
 	}
 
 }
@@ -397,13 +499,40 @@ footer img {
     padding: 1%;
   }
 
-	nav a:hover {
-		color: #ed1c24;
-		transition: .5s;
-	}
-
 	header nav .active {
 		color: #ed1c24;
+	}
+
+/* Donate Button */
+
+	.donate-button {
+		padding: 5%;
+		background: #ed1c24;
+		border: #ed1c24 solid 0.095rem;
+		border-radius: 0.3rem;
+	}
+
+		.donate-button:hover {
+			color: #ffffff;
+		}
+
+/* Other */
+
+	.hero-image-index {
+		padding: 30% 0 25% 0;
+	}
+
+	h2 {
+		font-size: 2.2rem;
+	}
+
+	h3 {
+		font-size: 1.8rem;
+		padding-bottom: 3%;
+	}
+
+	.link-button {
+		padding: 0.8% 1.5%;
 	}
 
 }
@@ -419,10 +548,80 @@ footer img {
 		justify-content: center;
 	}
 
-	.button-go {
-		 padding: 2% 4.5%;
+	.link-button {
+		padding: 1.5% 2.1%;
+	}
+
+	.link-block p {
+	  width: 70%;
+	  padding: 5% 0 6% 0;
+	}
+
+	.index-container {
+	  padding-top: 7%;
 	}
 
 }
 
 /* ----------------- END 1100PX MEDIA QUERY ----------------- */
+
+/* ----------------- START 1400PX MEDIA QUERY ----------------- */
+
+@media (min-width: 1400px) {
+
+	.page-description p {
+	  width: 1190px;
+	}
+
+	footer img {
+		padding: 0.3%;
+	}
+
+}
+
+/* ----------------- END 1400PX MEDIA QUERY ----------------- */
+
+/* ----------------- START 1600PX MEDIA QUERY ----------------- */
+
+@media (min-width: 1600px) {
+
+	.page-description {
+	  padding: 1.5% 0;
+	}
+
+	.hero-image-index {
+		padding: 25% 0 20% 0;
+	}
+
+}
+
+/* ----------------- END 1600PX MEDIA QUERY ----------------- */
+
+/* ----------------- START 2000PX MEDIA QUERY ----------------- */
+
+@media (min-width: 2000px) {
+
+	.hero-image-index {
+		padding: 22% 0;
+		background-position: center;
+	}
+
+	h1 {
+		font-size: 3.5rem;
+	}
+
+	.index-container {
+		padding-top: 3%;
+	}
+
+	.link-block {
+		padding-bottom: 5%;
+	}
+
+	footer {
+		padding: 1% 0;
+	}
+
+}
+
+/* ----------------- END 2000PX MEDIA QUERY ----------------- */
