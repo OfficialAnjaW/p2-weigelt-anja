@@ -137,6 +137,20 @@ nav a:hover {
   padding: 45% 0 40% 0;
 }
 
+.hero-image-support {
+  background-image: url('img/support-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 45% 0 40% 0;
+}
+
+.hero-image-about {
+  background-image: url('img/about-hero.jpg');
+  background-size: cover;
+  background-position: top;
+  padding: 45% 0 40% 0;
+}
+
 /*===================
 *
 * Page Description
@@ -157,13 +171,20 @@ nav a:hover {
 
 /*===================
 *
-* Quick Links
+* Main Body Container
 *
 =====================*/
 
+.about-container,
 .index-container {
   padding-top: 10%;
 }
+
+/*===================
+*
+* Quick Links
+*
+=====================*/
 
 .quick-links {
   text-align: center;
@@ -209,7 +230,7 @@ nav a:hover {
 #accordion {
   width: 90%;
   margin: auto;
-  margin-top: 100px;
+	padding-bottom: 20%;
 }
 
 @media (min-width: 768px) {
@@ -427,10 +448,13 @@ footer img {
 	  padding-bottom: 3%;
 	}
 
+	.hero-image-about,
+	.hero-image-support,
 	.hero-image-index {
 	  padding: 35% 0 30% 0;
 	}
 
+  #accordion,
 	.link-block {
 	  padding-bottom: 10%;
 	}
@@ -518,6 +542,8 @@ footer img {
 
 /* Other */
 
+	.hero-image-about,
+	.hero-image-support,
 	.hero-image-index {
 		padding: 30% 0 25% 0;
 	}
@@ -557,6 +583,7 @@ footer img {
 	  padding: 5% 0 6% 0;
 	}
 
+  .about-container,
 	.index-container {
 	  padding-top: 7%;
 	}
@@ -589,6 +616,7 @@ footer img {
 	  padding: 1.5% 0;
 	}
 
+	.hero-image-about,
 	.hero-image-index {
 		padding: 25% 0 20% 0;
 	}
@@ -601,19 +629,27 @@ footer img {
 
 @media (min-width: 2000px) {
 
+	.hero-image-about,
 	.hero-image-index {
 		padding: 22% 0;
 		background-position: center;
+	}
+
+	.hero-image-support {
+		padding: 22% 0;
+		background-position: top;
 	}
 
 	h1 {
 		font-size: 3.5rem;
 	}
 
+  .about-container,
 	.index-container {
 		padding-top: 3%;
 	}
 
+  #accordion,
 	.link-block {
 		padding-bottom: 5%;
 	}
