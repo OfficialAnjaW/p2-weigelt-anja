@@ -8,6 +8,12 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
     display:block;
 }
 
+/*===================
+*
+* Font Styles
+*
+=====================*/
+
 body {
   font-family: 'Open Sans', sans-serif;
 	color: #585959;
@@ -15,7 +21,7 @@ body {
 
 h1 {
   color: #ffffff;
-  font-size: 3rem;
+  font-size: 2.3rem;
   text-align: center;
 }
 
@@ -56,21 +62,29 @@ header {
   color: #ffffff;
 	position: fixed;
 	width: 100%;
+	padding: 2% 0 1% 2%;
 }
 
 .desktop-menu {
 	display: none;
 }
 
+.mobile-logo {
+	max-width: 250px;
+}
+
 #hamburger {
+	background:none;
+	outline: none;
+  position: fixed;
+  top:0;
+  right:0;
 	display: block;
 	width: 100px;
 	height: 100px;
-	margin: auto;
-	margin-top: 60px;
-	background-color: #0081c6;
 	font-size: 50px;
 	color: #ffffff;
+	padding-bottom: 7%;
 }
 
 .mobile-menu {
@@ -317,19 +331,41 @@ footer img {
 	padding: 1%;
 }
 
+/*===================
+*
+* Mobile Responsiveness
+*
+=====================*/
+
+/* ----------------- START 768PX MEDIA QUERY ----------------- */
+
+@media (min-width: 768px) {
+
+	h1 {
+		font-size: 3rem;
+	}
+
+}
+
+/* ----------------- END 768PX MEDIA QUERY ----------------- */
+
 /* ----------------- START 1060PX MEDIA QUERY ----------------- */
 
 @media (min-width: 1060px) {
 
 /* Desktop Navigation */
-
   #hamburger,
+  .mobile-logo,
   .mobile-menu {
 		display: none;
 	}
 
 	.desktop-menu {
 		display: block;
+	}
+
+	header {
+		padding: 0;
 	}
 
   li img {
