@@ -15,18 +15,32 @@
   </head>
   <body>
 
-    <!-- Header/Navigation -->
+    <!-- Header -->
     <header>
-      <!-- <button id="hamburger">&#9776;</button> -->
-      <nav class="menu">
-        <ul class="desktop-nav">
-          <li><a href="index.html"><img src="img/bgccf-logo.png" alt="BGCCF Logo" title="Bgccf Logo" /></a></li>
+
+      <!-- Mobile Navigation -->
+      <a href="index.html"><img class="mobile-logo" src="img/bgccf-logo.png" alt="BGCCF Logo" title="Bgccf Logo" /></a>
+      <button id="hamburger">&#9776;</button>
+      <nav class="mobile-menu">
+        <ul class="mobile-nav">
           <li><a href="about.html">About</a></li>
-          <li><a href="support.html" class="active">Support</a></li>
+          <li><a href="support.html">Support</a></li>
           <li><a href="#">Contact</a></li>
           <li><a href="donate.html">Donate</a></li>
         </ul>
       </nav>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-menu">
+        <ul class="desktop-nav">
+          <li><a href="index.html"><img src="img/bgccf-logo.png" alt="BGCCF Logo" title="Bgccf Logo" /></a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a class="donate-button" href="#">Donate</a></li>
+        </ul>
+      </nav>
+
     </header>
 
     <!-- Main -->
@@ -94,7 +108,7 @@
 
     <!-- Scripts -->
 
-    <!-- <script src="scripts/main.js"></script> -->
+    <script src="scripts/main.js"></script>
     <script src="scripts/accordion.js"></script>
   </body>
 </html>
