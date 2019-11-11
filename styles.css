@@ -359,6 +359,51 @@ h5 {
 
 /*===================
 *
+* Statistics
+*
+=====================*/
+
+.statistics {
+	text-align: center;
+}
+
+.statistics img {
+	max-width: 148px;
+}
+
+.single-statistic {
+	padding-bottom: 20%;
+}
+
+
+div .number-one {
+	padding-top: 1.5%;
+	color: #ed1c24;
+	font-size: 1.6rem;
+}
+
+div .number-two {
+	padding-top: 1.5%;
+	color: #39b54a;
+	font-size: 1.6rem;
+}
+
+div .number-three {
+	padding-top: 1.5%;
+	color: #f7931e;
+	font-size: 1.6rem;
+}
+
+
+div .description {
+	font-weight: 600;
+	font-size: 1.2rem;
+}
+
+
+
+/*===================
+*
 * Footer
 *
 =====================*/
@@ -415,6 +460,10 @@ footer img {
 
 	#hamburger {
 		padding-bottom: 1%;
+	}
+
+	.single-statistic {
+		padding-bottom: 10%;
 	}
 
 }
@@ -485,6 +534,13 @@ footer img {
 
 	.link-button {
 		padding: 1.2% 2%;
+	}
+
+	.statistics {
+		display: flex;
+		justify-content: space-around;
+		max-width: 1000px;
+		margin: 0 auto;
 	}
 
 	footer img {
