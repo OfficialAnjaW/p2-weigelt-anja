@@ -15,18 +15,32 @@
   </head>
   <body>
 
-    <!-- Header/Navigation -->
+    <!-- Header -->
     <header>
-      <!-- <button id="hamburger">&#9776;</button> -->
-      <nav class="menu">
-        <ul class="desktop-nav">
-          <li><a href="index.html"><img src="img/bgccf-logo.png" alt="BGCCF Logo" title="Bgccf Logo" /></a></li>
-          <li><a href="about.html" class="active">About</a></li>
+
+      <!-- Mobile Navigation -->
+      <a href="index.html"><img class="mobile-logo" src="img/bgccf-logo.png" alt="BGCCF Logo" title="Bgccf Logo" /></a>
+      <button id="hamburger">&#9776;</button>
+      <nav class="mobile-menu">
+        <ul class="mobile-nav">
+          <li><a href="about.html">About</a></li>
           <li><a href="support.html">Support</a></li>
           <li><a href="#">Contact</a></li>
           <li><a href="donate.html">Donate</a></li>
         </ul>
       </nav>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-menu">
+        <ul class="desktop-nav">
+          <li><a href="index.html"><img src="img/bgccf-logo.png" alt="BGCCF Logo" title="Bgccf Logo" /></a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a class="donate-button" href="#">Donate</a></li>
+        </ul>
+      </nav>
+
     </header>
 
     <!-- Main -->
@@ -39,10 +53,10 @@
       <!-- Page Description -->
       <section class="page-description">
         <h2>Closing the Opportunity Gap</h2>
-        <p>We serve the children who need us the most. By providing our Club members with academic support, extracurricular opportunities, and positive adult role models, we aim to break the cycle of poverty for future generations of Central Floridians.</p>
+        <p>At our 35 Clubs in 7 counties, we serve the children who need us the most. Our Clubs are located in neighborhoods that, on average, rank at the 12th percentile for household income and the 71st percentile for incarceration rates. By providing our Club members with academic support, extracurricular opportunities, and positive adult role models, we aim to break the cycle of poverty for future generations of Central Floridians.</p>
       </section>
 
-      <div class="container">
+      <div class="about-container">
 
         <h3>Our Impact</h3>
 
@@ -63,6 +77,6 @@
 
     <!-- Scripts -->
 
-    <script src="main.js"></script>
+    <script src="scripts/main.js"></script>
   </body>
 </html>
