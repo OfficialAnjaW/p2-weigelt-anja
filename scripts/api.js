@@ -9,7 +9,7 @@ xmlhttp.onreadystatechange = function() {
 
         //Create Quote
 
-        var randomQuote = document.createTextNode(apiResult.name);
+        var randomQuote = document.createTextNode(apiResult.value);
 
         //Add quote to screen
 
@@ -19,5 +19,5 @@ xmlhttp.onreadystatechange = function() {
 
     }
 };
-xmlhttp.open('GET', 'http://api.openweathermap.org/data/2.5/weather?q=33897,us&appid=6efff70fe1477748e31c17d1c504635f', true);
+xmlhttp.open('GET', 'https://api.chucknorris.io/jokes/random', true);
 xmlhttp.send();

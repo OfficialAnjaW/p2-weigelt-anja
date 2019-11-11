@@ -447,6 +447,8 @@ div .description {
 
 .random-quotes p {
 	font-style: italic;
+	max-width: 90%;
+	margin: 0 auto;
 }
 
 /*===================
@@ -762,6 +764,10 @@ footer img {
 
 	.page-description p {
 	  width: 1190px;
+	}
+
+	.random-quotes p {
+		width: 1100;
 	}
 
 	footer img {
