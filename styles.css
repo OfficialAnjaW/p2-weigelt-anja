@@ -400,7 +400,42 @@ div .description {
 	font-size: 1.2rem;
 }
 
+/*===================
+*
+* Formula
+*
+=====================*/
 
+.formula {
+	text-align: center;
+	padding-bottom: 20%;
+}
+
+.formula img {
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+.formula-details {
+	text-align: left;
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+.formula h3 {
+	padding: 2% 0 1% 0;
+	text-align: left;
+}
+
+/*===================
+*
+* Random Quotes
+*
+=====================*/
+
+.random-quotes {
+	background-color: #f0f0f0;
+}
 
 /*===================
 *
@@ -496,6 +531,11 @@ footer img {
 	  max-width: 472px;
 	}
 
+	.formula {
+		width: 590px;
+		margin: 0 auto;
+	}
+
 }
 
 /* ----------------- END 650PX MEDIA QUERY ----------------- */
@@ -541,6 +581,10 @@ footer img {
 		justify-content: space-around;
 		max-width: 1000px;
 		margin: 0 auto;
+	}
+
+	.single-statistic {
+		padding-bottom: 15%;
 	}
 
 	footer img {
@@ -708,6 +752,21 @@ footer img {
 		width: 1120px;
 	}
 
+	.formula {
+		display: flex;
+		justify-content: space-around;
+		align-items: flex-start;
+	  width: 70%;
+	}
+
+	.formula img {
+		padding-right: 10%;
+	}
+
+	.formula-details {
+		width: 60%;
+	}
+
 }
 
 /* ----------------- END 1400PX MEDIA QUERY ----------------- */
@@ -723,6 +782,10 @@ footer img {
 	.hero-image-about,
 	.hero-image-index {
 		padding: 25% 0 20% 0;
+	}
+
+	.formula {
+		width: 1300px;
 	}
 
 }
