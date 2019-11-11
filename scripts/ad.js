@@ -8,3 +8,10 @@ setTimeout(() => {
   slideOutAd.classList.remove('hide');
   slideOutAd.classList.add('show-ad');
 }, 2000);
+
+function slideBackAd() {
+  slideOutAd.classList.add('hide');
+  slideOutAd.classList.remove('show-ad');
+}
+
+slideOutAd.addEventListener("click", slideBackAd);

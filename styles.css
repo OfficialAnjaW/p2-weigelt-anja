@@ -302,7 +302,7 @@ nav a:hover {
 
 #slideout-ad {
 	max-width: 320px;
-	background-color: #ffffff;
+	background-color: #f0f0f0;
 	text-align: center;
 	position: absolute;
 	right: 0;
@@ -347,14 +347,15 @@ h5 {
 
 .show-ad {
 	width: 320px;
-	height: 350px;
-	transition: width 2s;
+	height: 375px;
+	transition: width 1s;
 }
 
 .hide {
 	width: 0;
 	overflow: hidden;
-	height: 350px;
+	height: 375px;
+	transition: width 1s;
 }
 
 /*===================
@@ -682,11 +683,14 @@ footer img {
 
 
 /* Other */
-
-	.hero-image-about,
 	.hero-image-support,
 	.hero-image-index {
 		padding: 30% 0 25% 0;
+	}
+
+	.hero-image-about {
+		padding: 30% 0 25% 0;
+		background-position: center;
 	}
 
 	h2 {
@@ -812,12 +816,12 @@ footer img {
 
 @media (min-width: 2000px) {
 
+	.hero-image-about,
 	.hero-image-index {
 		padding: 22% 0;
 		background-position: center;
 	}
 
-	.hero-image-about,
 	.hero-image-support {
 		padding: 22% 0;
 	}
