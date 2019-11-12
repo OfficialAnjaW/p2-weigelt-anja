@@ -499,6 +499,10 @@ footer img {
 	  padding: 1.5% 2.2%;
 	}
 
+	.link-block a:hover {
+		padding: 1.5% 2.2%;
+	}
+
 }
 
 /* ----------------- END 450PX MEDIA QUERY ----------------- */
@@ -591,6 +595,10 @@ footer img {
 		padding: 1.2% 2%;
 	}
 
+	.link-block a:hover {
+		padding: 1.2% 2%;
+	}
+
 	.statistics {
 		display: flex;
 		justify-content: space-around;
@@ -679,9 +687,9 @@ footer img {
 		border-radius: 0.3rem;
 	}
 
-		.donate-button:hover {
-			color: #ffffff;
-		}
+	.donate-button:hover {
+		color: #ffffff;
+	}
 
 
 /* Other */
@@ -708,6 +716,10 @@ footer img {
 		padding: 0.8% 1.5%;
 	}
 
+	.link-block a:hover {
+		padding: 0.8% 1.5%;
+	}
+
 }
 
 /* ----------------- END 1060PX MEDIA QUERY ----------------- */
@@ -723,6 +735,10 @@ footer img {
 	}
 
 	.link-button {
+		padding: 1.5% 2.1%;
+	}
+
+	.link-block a:hover {
 		padding: 1.5% 2.1%;
 	}
 

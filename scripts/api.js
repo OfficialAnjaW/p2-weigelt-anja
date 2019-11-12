@@ -9,15 +9,17 @@ xmlhttp.onreadystatechange = function() {
 
         //Create Quote
 
-        var randomQuote = document.createTextNode(apiResult.value);
+        var randomQuote = document.createTextNode(apiResult.contents.quotes[0].quote);
+        var quoteAuthor = document.createTextNode(apiResult.contents.quotes[0].author);
 
-        //Add quote to screen
+        //Add quote & author to screen
 
         var quoteLocation = document.getElementById('quote-location');
         quoteLocation.appendChild(randomQuote);
-
+        var authorLocation = document.getElementById('author');
+        authorLocation.appendChild(quoteAuthor);
 
     }
 };
-xmlhttp.open('GET', 'https://api.chucknorris.io/jokes/random', true);
+xmlhttp.open('GET', 'http://quotes.rest/qod.json?category=love', true);
 xmlhttp.send();
