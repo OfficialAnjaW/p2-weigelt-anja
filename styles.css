@@ -89,7 +89,7 @@ header {
 }
 
 .mobile-menu {
-	height: 0px;
+	height: 0;
 	overflow: hidden;
 	transition: height 0.5s;
 }
@@ -376,7 +376,6 @@ h5 {
 	padding-bottom: 20%;
 }
 
-
 div .number-one {
 	padding-top: 1.5%;
 	color: #ed1c24;
@@ -394,7 +393,6 @@ div .number-three {
 	color: #f7931e;
 	font-size: 1.6rem;
 }
-
 
 div .description {
 	font-weight: 600;
@@ -541,8 +539,8 @@ footer img {
 	}
 
 	.link-block p {
-	   max-width: 488px;
-		 padding: 2% 0 3% 0;
+	  max-width: 488px;
+		padding: 2% 0 3% 0;
 	}
 
 	.link-block img {
@@ -690,7 +688,6 @@ footer img {
 	.donate-button:hover {
 		color: #ffffff;
 	}
-
 
 /* Other */
 	.hero-image-support,
