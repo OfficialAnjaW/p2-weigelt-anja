@@ -1,4 +1,4 @@
-// 2. POP-UP AD
+// 2. Slide-Out AD
 
 // Global Varibale
 const slideOutAd = document.getElementById('slideout-ad');
